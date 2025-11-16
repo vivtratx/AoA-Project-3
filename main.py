@@ -14,10 +14,10 @@ def loadDictionary(fileName: str):
 
 
 # DP Function
-def splitString(s: str, dictionary: set[str]):
+def splitString(s, dictionary):
     n = len(s)
     INF = n+1
-    
+
     # DP[i] holds the minimum number of dictionary words that it would take to split the input string
     dp = [INF] * (n+1)
     nextIdx = [-1] * (n+1)
